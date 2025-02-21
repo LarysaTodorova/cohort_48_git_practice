@@ -26,3 +26,43 @@ li {
   margin: 0;
   padding: 0;
 }
+
+footer {
+  height: 120px;
+  padding: 20px;
+  font-size: 20px;
+  background-color: rgb(44, 170, 170);
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+.user_image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
