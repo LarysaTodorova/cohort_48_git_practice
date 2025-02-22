@@ -34,3 +34,43 @@ li {
   flex-direction:row;
   justify-content: space-between;
 }
+
+footer {
+  height: 100px;
+  padding: 15px 40px;
+  font-size: 18px;
+  background-color: rgb(30, 140, 140);
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+.user_image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
