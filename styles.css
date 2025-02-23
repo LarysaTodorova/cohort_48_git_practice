@@ -41,6 +41,12 @@ a {
   align-items: center;
   justify-content: space-between;
 }
+main {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+}
 
 #buttons {
   display: flex;
@@ -94,8 +100,29 @@ footer a:hover {
   text-decoration: underline;
 }
 .user_image {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 50%;
+}
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  width: 400px;
+  height: 500px;
+  padding: 20px;
+  border: 2px solid black;
+  color: rgba(0, 0, 0, 0.774);
+  background-color: rgb(30, 140, 140);
+  gap: 20px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
