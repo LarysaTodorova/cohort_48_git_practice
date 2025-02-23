@@ -62,6 +62,7 @@ main {
 
 #buttons a:hover {
   border-radius: 50px;
+  transform: scale(1.1);
   transition: background-color 0.3s;
   background-color: lightgreen;
 }
