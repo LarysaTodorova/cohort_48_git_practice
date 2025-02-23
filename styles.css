@@ -40,6 +40,7 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  border: 2px solid black;
 }
 main {
   display: flex;
@@ -59,14 +60,15 @@ main {
   color: black;
   border-radius: 50px;
   background-color: rgba(255, 106, 0);
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
 }
 
 #header-links a:hover {
-  border-radius: 50px;
   transform: scale(1.1);
-  transition: background-color 0.3s;
-  background-color: rgb(197, 88, 10);
-  color: white;
+  transition: color 0.3s;
+  color: black;
 }
 
 footer {
@@ -80,6 +82,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
+  border: 2px solid black;
 }
 
 .left {
@@ -178,4 +181,7 @@ footer a:hover {
 
 .role:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+  transition: color 0.3s;
+  color: black;
 }
