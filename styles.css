@@ -55,16 +55,18 @@ main {
 }
 
 #buttons a {
-  border-radius: 20% solid;
   padding: 8px;
   color: black;
+  border-radius: 50px;
+background-color:  rgba(255, 106, 0);
 }
 
 #buttons a:hover {
   border-radius: 50px;
   transform: scale(1.1);
   transition: background-color 0.3s;
-  background-color: lightgreen;
+  background-color:  rgb(197, 88, 10);
+  color: white;
 }
 
 footer {
