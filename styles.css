@@ -159,3 +159,20 @@ footer a:hover {
 #logo:hover img {
   transform: scale(1.1);
 }
+
+.user .role {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  margin-left: -50px;
+  background-color: rgba(255, 106, 0);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.role:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
