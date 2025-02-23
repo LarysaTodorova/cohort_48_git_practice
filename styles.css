@@ -48,20 +48,20 @@ main {
   align-items: center;
 }
 
-#buttons {
+#header-links {
   display: flex;
   gap: 50px;
   margin-right: 30px;
 }
 
-#buttons a {
+#header-links a {
   padding: 8px;
   color: black;
   border-radius: 50px;
 background-color:  rgba(255, 106, 0);
 }
 
-#buttons a:hover {
+#header-links a:hover {
   border-radius: 50px;
   transform: scale(1.1);
   transition: background-color 0.3s;
