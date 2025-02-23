@@ -126,3 +126,14 @@ footer a:hover {
   flex-direction: column;
   gap: 10px;
 }
+
+.user {
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.user:hover {
+  transform: scale(1.1);
+  z-index: 10;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
