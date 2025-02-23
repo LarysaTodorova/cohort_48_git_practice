@@ -58,14 +58,14 @@ main {
   padding: 8px;
   color: black;
   border-radius: 50px;
-background-color:  rgba(255, 106, 0);
+  background-color: rgba(255, 106, 0);
 }
 
 #header-links a:hover {
   border-radius: 50px;
   transform: scale(1.1);
   transition: background-color 0.3s;
-  background-color:  rgb(197, 88, 10);
+  background-color: rgb(197, 88, 10);
   color: white;
 }
 
@@ -108,7 +108,7 @@ footer a:hover {
   object-fit: cover;
   border-radius: 50%;
 }
-.user {
+.user_card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -124,23 +124,23 @@ footer a:hover {
   background-color: rgb(30, 140, 140);
   gap: 20px;
 }
-.text {
+.user_info {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.user {
+.user_card {
   position: relative;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.user:hover {
+.user_card:hover {
   transform: scale(1.1);
   z-index: 10;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
-.user:hover {
+.user_card:hover {
   background-color: rgb(40, 160, 160);
 }
 #logo {
@@ -163,7 +163,7 @@ footer a:hover {
   transform: scale(1.1);
 }
 
-.user .role {
+.user_card .role {
   position: absolute;
   top: 10px;
   left: 50%;
