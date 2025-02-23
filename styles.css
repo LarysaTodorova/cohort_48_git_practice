@@ -140,3 +140,22 @@ footer a:hover {
 .user:hover {
   background-color: rgb(40, 160, 160);
 }
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+#logo img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+#logo:hover img {
+  transform: scale(1.1);
+}
