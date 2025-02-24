@@ -26,6 +26,7 @@ li {
   margin: 0;
   padding: 0;
 }
+
 a {
   text-decoration: none;
 }
@@ -42,11 +43,25 @@ a {
   justify-content: space-between;
   border: 2px solid black;
 }
-main {
+
+#logo {
   display: flex;
-  flex: 1;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+#logo img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+#logo:hover img {
+  transform: scale(1.1);
 }
 
 #header-links {
@@ -66,6 +81,72 @@ main {
 }
 
 #header-links a:hover {
+  transform: scale(1.1);
+  transition: color 0.3s;
+  color: black;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.user_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  width: 400px;
+  height: 500px;
+  padding: 20px;
+  border: 2px solid black;
+  color: rgba(0, 0, 0, 0.774);
+  background-color: rgb(30, 140, 140);
+  gap: 20px;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.user_image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.user_info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user_card .role {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  margin-left: -50px;
+  background-color: rgba(255, 106, 0);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.user_card:hover {
+  transform: scale(1.1);
+  z-index: 10;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  background-color: rgb(40, 160, 160);
+}
+
+.role:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
   transform: scale(1.1);
   transition: color 0.3s;
   color: black;
@@ -104,84 +185,4 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
-}
-.user_image {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-.user_card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  font-size: 20px;
-  font-weight: bold;
-  width: 400px;
-  height: 500px;
-  padding: 20px;
-  border: 2px solid black;
-  color: rgba(0, 0, 0, 0.774);
-  background-color: rgb(30, 140, 140);
-  gap: 20px;
-}
-.user_info {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.user_card {
-  position: relative;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.user_card:hover {
-  transform: scale(1.1);
-  z-index: 10;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-}
-.user_card:hover {
-  background-color: rgb(40, 160, 160);
-}
-#logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  text-decoration: none;
-  margin-left: 30px;
-}
-
-#logo img {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-}
-
-#logo:hover img {
-  transform: scale(1.1);
-}
-
-.user_card .role {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  margin-left: -50px;
-  background-color: rgba(255, 106, 0);
-  color: white;
-  padding: 5px 10px;
-  border-radius: 10px;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.role:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-  transform: scale(1.1);
-  transition: color 0.3s;
-  color: black;
 }
